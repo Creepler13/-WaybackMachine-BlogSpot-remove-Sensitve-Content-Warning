@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WaybackMachine BlogSpot remove Sensitve Content Warning
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  Removes the Sensitve Content Warning from Blogspot pages that are saved in the WaybackMachine
 // @icon         https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Blogger_icon.svg/800px-Blogger_icon.svg.png
 // @author       Creepler13
