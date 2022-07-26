@@ -9,28 +9,22 @@
 // @grant        none
 // ==/UserScript==
 
-(function() {
-    'use strict';
+(function () {
+    "use strict";
 
-     setInterval(e=>{
-
-let imageDiv =  document.querySelector('div[style^="background-image"]');
-      if(!imageDiv)return;
-   imageDiv.className =imageDiv.className.split(" ")[0]
-for(let e of imageDiv.parentElement.parentElement.childNodes){
-if(e!= imageDiv.parentElement){e.remove();
-       let styles = ' div::before {  display:none;} '
-    let  styleSheet = document.createElement("style")
-    styleSheet.innerText = styles
-      styleSheet.id="removeAgeRestriction";
-        document.body.append(styleSheet)
-}
-}
-
-
-
-
-    },100)
-
-
+    setInterval((e) => {
+        let imageDiv = document.querySelector('div[style^="background-image"]');
+        if (!imageDiv) return;
+        imageDiv.className = imageDiv.className.split(" ")[0];
+        for (let e of imageDiv.parentElement.parentElement.childNodes) {
+            if (e != imageDiv.parentElement) {
+                e.remove();
+                let styles = " div::before {  display:none;} ";
+                let styleSheet = document.createElement("style");
+                styleSheet.innerText = styles;
+                styleSheet.id = "removeAgeRestriction";
+                document.body.append(styleSheet);
+            }
+        }
+    }, 100);
 })();
