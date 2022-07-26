@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WaybackMachine DeviantArt remove mature blur (kind of)
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      1.1
 // @description  Removes the mature blur on DeviantArt posts saved in the WaybackMachine. Sadly the image wont be at full quality, because it only archives the thumbnails of mature posts
 // @author       You
 // @match        https://web.archive.org/web/*/https://www.deviantart.com/*/art/*
